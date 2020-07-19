@@ -5,14 +5,12 @@ import PublicLayout from "./layout/PublicLayout";
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/contactus/ContactUsPage";
-// import BookDetailsPage from "./pages/BookDetail/BookDetailsPage";
-// import CollectionsPage from "./pages/CollectionDetails/CollectionsPage";
+import TutorsPage from "./pages/tutors/TutorsPage";
+import IndividualTutorPage from "./pages/tutors/IndividualTutorPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./routes";
-
-import { createBrowserHistory } from "history";
 
 const pages = [
   // Public pages
@@ -36,6 +34,18 @@ const pages = [
   },
   {
     exact: true,
+    path: routes.tutors,
+    component: TutorsPage,
+    layout: PublicLayout,
+  },
+  {
+    exact: true,
+    path: routes.individualtutor,
+    component: IndividualTutorPage,
+    layout: PublicLayout,
+  },
+  {
+    exact: true,
     path: routes.contact,
     component: ContactUsPage,
     layout: PublicLayout,
@@ -43,10 +53,9 @@ const pages = [
 ];
 
 const App = () => {
-  const history = createBrowserHistory();
 
   return (
-    <Router history={history}>
+    <Router>
       <Switch>
         {pages.map(
           (

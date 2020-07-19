@@ -5,7 +5,7 @@ const HelloPage = () => {
     <>
       <div>
         <h1>
-          hello
+          This is the home page
         </h1>
       </div>
     </>

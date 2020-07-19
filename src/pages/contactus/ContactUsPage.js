@@ -1,13 +1,16 @@
 import React from "react";
-import Enquiry from "./Enquiry";
+// import Enquiry from "./Enquiry";
 
 const ContactUsPage = () => {
   return (
     <div>
       <h1>
-        email: hi@gmail.com
+        This is the Contact Us Page
       </h1>
-      <Enquiry/>
+      <p>
+        email: jmustudio@gmail.com
+      </p>
+      {/* <Enquiry/> */}
     </div>
   );
 };

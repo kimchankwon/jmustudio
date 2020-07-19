@@ -1,6 +1,9 @@
 import React from "react";
 import { Layout, Menu } from 'antd';
+import { SyncOutlined } from '@ant-design/icons';
 import routes from "../routes";
+
+import tutors from "../data/tutors";
 
 const { Header, Content, Footer } = Layout;
 
@@ -14,13 +17,15 @@ const PublicLayout = props => {
 
   return (
     <Layout className="layout">
-      <Header className="header" style={{ position: 'fixed', width: '100%', 'background-color': 'black' }}>
-        <div className="logo" />
-        <Menu mode="horizontal" theme='dark' onClick={goToPage} style={{ 'background-color': 'black', 'font-family': 'serif' }}>
+      <Header className="header" style={{ position: 'fixed', width: '100%', backgroundColor: 'black' }}>
+        <Menu mode="horizontal" theme='dark' onClick={goToPage} style={{ backgroundColor: 'black', fontFamily: 'serif' }}>
+          <Menu.Item key={routes.index}><SyncOutlined spin /></Menu.Item>
           <Menu.Item key={routes.home}>Home</Menu.Item>
           <Menu.Item key={routes.about}>About Us</Menu.Item>
-          <SubMenu title="Tutors">
-            <Menu.Item key={routes.tutor}>Jae Kwon Kim</Menu.Item>
+          <SubMenu title="Tutors" key={routes.tutors} onTitleClick={goToPage}>
+            {tutors.map(({id, name}) => {
+              return <Menu.Item key={`${routes.tutornoid}/${id}`}>{name}</Menu.Item>
+            })}
           </SubMenu>
           <Menu.Item key={routes.contact}>Contact Us</Menu.Item>
         </Menu>
@@ -30,7 +35,7 @@ const PublicLayout = props => {
           {props.children}
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>JMU Studio ©2020</Footer>
+      <Footer style={{ textAlign: 'center' }}>JMU Studio ©2020 - 1.0.0</Footer>
     </Layout>
   );
 }
