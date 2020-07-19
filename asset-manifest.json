@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/jmustudio/static/css/main.012a19cf.chunk.css",
+    "main.js": "/jmustudio/static/js/main.82cf2553.chunk.js",
+    "main.js.map": "/jmustudio/static/js/main.82cf2553.chunk.js.map",
+    "runtime-main.js": "/jmustudio/static/js/runtime-main.11ec2616.js",
+    "runtime-main.js.map": "/jmustudio/static/js/runtime-main.11ec2616.js.map",
+    "static/css/2.4c4477be.chunk.css": "/jmustudio/static/css/2.4c4477be.chunk.css",
+    "static/js/2.617cdfb4.chunk.js": "/jmustudio/static/js/2.617cdfb4.chunk.js",
+    "static/js/2.617cdfb4.chunk.js.map": "/jmustudio/static/js/2.617cdfb4.chunk.js.map",
+    "index.html": "/jmustudio/index.html",
+    "precache-manifest.bfe1d7aac3ce1b24870c1be1e9ff0aee.js": "/jmustudio/precache-manifest.bfe1d7aac3ce1b24870c1be1e9ff0aee.js",
+    "service-worker.js": "/jmustudio/service-worker.js",
+    "static/css/2.4c4477be.chunk.css.map": "/jmustudio/static/css/2.4c4477be.chunk.css.map",
+    "static/css/main.012a19cf.chunk.css.map": "/jmustudio/static/css/main.012a19cf.chunk.css.map",
+    "static/js/2.617cdfb4.chunk.js.LICENSE.txt": "/jmustudio/static/js/2.617cdfb4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11ec2616.js",
+    "static/css/2.4c4477be.chunk.css",
+    "static/js/2.617cdfb4.chunk.js",
+    "static/css/main.012a19cf.chunk.css",
+    "static/js/main.82cf2553.chunk.js"
+  ]
+}
