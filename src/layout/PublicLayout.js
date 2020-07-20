@@ -56,7 +56,7 @@ const PublicLayout = props => {
             {props.children}
           </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>JMU Studio ©2020 - 1.0.0</Footer>
+        <Footer style={{ textAlign: 'center' }}>JMU Studio ©2020</Footer>
       </Layout>
   );
 }
