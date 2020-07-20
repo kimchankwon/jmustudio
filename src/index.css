@@ -24,10 +24,38 @@ code {
   border-color: white;
 }
 
+.ant-menu.ant-menu-dark .ant-menu-submenu.submenu:hover,
+.ant-menu.ant-menu-dark .ant-menu-submenu-selected.submenu:hover,
+.ant-menu.ant-menu-dark .ant-menu-submenu-open.submenu:hover,
+.ant-menu.ant-menu-dark .ant-menu-submenu-open.submenu,
+.ant-menu.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-item.submenuitem {
+  margin: 0px;
+  background: black;
+  color: white;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item.submenuitem {
+  margin: 0px;
+  background: black;
+  color: white;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected.submenuitem {
+  background: white !important;
+  color: black !important;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected.menuitem,
+.ant-menu.ant-menu-dark .ant-menu-submenu-selected.submenu {
+  background: white;
+  color: black;
+}
+
 .site-layout-content {
-  background: #fff;
+  background: white;
   padding: 24px;
-  min-height: 280px;
+  min-height: 1000px;
 }
 
 .logo {

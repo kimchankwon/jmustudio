@@ -5,11 +5,11 @@ const ContactUsPage = () => {
   return (
     <div>
       <h1>
-        This is the Contact Us Page
-      </h1>
-      <p>
         email: jmustudio@gmail.com
-      </p>
+      </h1>
+      <h1>
+        Facebook: facebook.com/jmustudio
+      </h1>
       {/* <Enquiry/> */}
     </div>
   );
