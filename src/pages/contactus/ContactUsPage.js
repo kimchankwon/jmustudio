@@ -5,7 +5,7 @@ const ContactUsPage = () => {
   return (
     <div>
       <h1>
-        email: jmustudio@gmail.com
+        email: jmu-studio@gmail.com
       </h1>
       <h1>
         Facebook: facebook.com/jmustudio
