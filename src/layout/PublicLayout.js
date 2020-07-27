@@ -36,7 +36,7 @@ const PublicLayout = props => {
       <Layout>
         <Header style={{ position: 'fixed', width: '100%', background: 'black', zIndex: 100 }}>
           <Menu className="menu" theme="dark" mode="horizontal" onClick={goToPage} defaultSelectedKeys={[`${currentKey}`]} style={{background: 'black', fontFamily: 'Open Sans'}}>
-            <Menu.Item className="menuitem" key={routes.index}><SyncOutlined spin />LOGO <SyncOutlined spin /></Menu.Item>
+            <Menu.Item className="menuitem" key={routes.index}><SyncOutlined spin />JMU STUDIO<SyncOutlined spin /></Menu.Item>
             {currentKeyIs("/tutors") ?
               <Menu.Item className="menuitem" key={routes.tutors} style={{float: 'right'}}>TUTORS</Menu.Item>
               :
@@ -51,7 +51,7 @@ const PublicLayout = props => {
             <Menu.Item className="menuitem" key={routes.home} style={{float: 'right'}}>HOME</Menu.Item>
           </Menu>
         </Header>
-        <Content style={{ padding: '0 50px', marginTop: 64 }}>
+        <Content style={{ /*padding: '0 50px', */marginTop: 64 }}>
           <div className="site-layout-content">
             {props.children}
           </div>
